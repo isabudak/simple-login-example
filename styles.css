@@ -1,0 +1,181 @@
+*{ padding: 0;
+margin: 0;
+font-family: Proxima Nova;
+box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right , lightgreen 33% , #fff 33% 66% );
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.contone{
+    height: 800px;
+    width: 600px;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-weight: 200;
+    padding-top: 325px;
+    margin: auto;
+    margin-left: 25px;
+    /*user-select: none;*/
+}
+.container{margin-top: -900px;
+
+    margin-left: 500px;
+}
+
+.container .title{
+    font-size: 50px;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+}
+/*.container form{margin: auto;}*/
+
+
+.container .or{
+
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.container form .input-box{
+
+    position: relative;
+    width: 500px;
+    height: 45px;
+    margin-top: 25px;
+   
+}
+
+.container form .input-box input{
+
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+
+}
+
+.container form .underline:before{
+    background: white;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    content:"";
+    bottom: 0;
+} 
+
+
+.container form .underline:after{
+
+    position: absolute;
+    background: lightgreen;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    content:"";
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+
+}
+
+
+.container form .input-box input:focus~.underline:after,
+.container form .input-box input:valid~.underline:after{
+
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.container form .button{
+    margin: 40px 0 20px 0;
+}
+
+.container form .input-box input[type="submit"]{
+    background: lightgreen;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.container form .input-box input[type="submit"]:hover{
+
+    border-radius: 20px;
+    background: rgb(131, 214, 131);
+    font-weight: 500;
+    letter-spacing: 10px ;
+    transition: all 0.4s ease;
+}
+
+.container .google a ,
+.container .facebook a,
+.container .github a{
+    display: block;
+    width: 500px;
+    height: 60px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+.container .google a{
+    background: #1A81F3;
+    margin: 40px 0 15px 0;
+    transition: all 0.3s ease;
+}
+.container .google a:hover{
+    background: #1465c2;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+
+
+.container .facebook a{
+    background:#1053a0;
+    margin: 40px 0 20px 0;
+    transition: all 0.3s ease;
+}
+
+.container .facebook a:hover{
+    background: #0d417c;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+
+.container .github a{
+    background: purple;
+    margin: 20px  0 20px 0;
+    transition: all 0.3s ease;
+}
+
+.container .github a:hover{
+    background: rgb(80, 1, 80);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.container .google a i,
+.container .facebook a i,
+.container .github a i{
+
+    font-size: 22px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
